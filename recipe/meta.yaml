@@ -1,6 +1,6 @@
 {% set name = "gridded" %}
 {% set version = "0.0.8" %}
-{% set sha256 = "57c4df88b767beb8b38d5103d8aed0b8e913fdf497e20b6c19c920113e90690e" %}
+{% set sha256 = "35a89b092215b6a4cf1f99a40a207ff70539fb6e568a14ef58099bc443201bb2" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-    number: 0
+    number: 2
     script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
