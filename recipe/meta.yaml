@@ -1,6 +1,6 @@
 {% set name = "gridded" %}
-{% set version = "0.2.0" %}
-{% set sha256 = "156951d56f609f77a91693cefef5291b52afdf5c4b93c27dcd9a769f34c9d791" %}
+{% set version = "0.2.1" %}
+{% set sha256 = "4b2bf105d2061f0aeded775f82c2c100d51fe3d550a49bebb4e434f6927bfafc" %}
 
 package:
   name: {{ name|lower }}
