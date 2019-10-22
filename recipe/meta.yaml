@@ -1,6 +1,6 @@
 {% set name = "gridded" %}
-{% set version = "0.1.6" %}
-{% set sha256 = "f924ed0fb7bf2e51ad010083457cc142d9b04ab396dd006556444057438253e7" %}
+{% set version = "0.2.2" %}
+{% set sha256 = "244fda1fcdd6cdc0b10f07270bd91670cdd01c2ecbef17d30c5f4b2508752c91" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-    number: 1000
+    number: 0
     script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
@@ -42,14 +42,14 @@ about:
   license: BSD 3-Clause
   summary: |
     A library designed to represent grid-aligned data and provide a variety of
-    processing functions, netCDF file reading/writing, and UGrid/SGrid
-    standard compatibility
+    processing functions, netCDF file reading/writing, and CF, UGrid, and SGrid
+    standard compatibility.
 
   description: |
     Gridded is a unification of the pysgrid, pyugrid, and a data representation
     layer that is designed to provide an intuitive and flexible system for
     reading and representing gridded data from a variety of sources. It is also
-    a library to compile useful functions for processing gridded data.
+    a library to contain useful functions for processing gridded data.
 
 extra:
   recipe-maintainers:
