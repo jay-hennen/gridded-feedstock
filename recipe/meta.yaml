@@ -1,24 +1,21 @@
-{% set name = "gridded" %}
-{% set version = "0.2.1" %}
-{% set sha256 = "4b2bf105d2061f0aeded775f82c2c100d51fe3d550a49bebb4e434f6927bfafc" %}
+{% set version = "0.2.3" %}
 
 package:
-  name: {{ name|lower }}
+  name: gridded
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/NOAA-ORR-ERD/gridded/archive/v{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 9ebc88c2b4e1a6ffbae2af0600c74d557fb8489a0151f819b63c6d38ceb8aef6
 
 build:
     number: 0
-    script: python setup.py install --single-version-externally-managed --record record.txt
+    script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
   run:
     - python
     - six
@@ -39,17 +36,18 @@ test:
 
 about:
   home: https://github.com/NOAA-ORR-ERD/gridded
-  license: BSD 3-Clause
+  license: BSD-3-Clause
+  license_file: LICENSE
   summary: |
     A library designed to represent grid-aligned data and provide a variety of
-    processing functions, netCDF file reading/writing, and UGrid/SGrid
-    standard compatibility
+    processing functions, netCDF file reading/writing, and CF, UGrid, and SGrid
+    standard compatibility.
 
   description: |
     Gridded is a unification of the pysgrid, pyugrid, and a data representation
     layer that is designed to provide an intuitive and flexible system for
     reading and representing gridded data from a variety of sources. It is also
-    a library to compile useful functions for processing gridded data.
+    a library to contain useful functions for processing gridded data.
 
 extra:
   recipe-maintainers:
