@@ -1,4 +1,4 @@
-{% set version = "0.2.4" %}
+{% set version = "0.2.5" %}
 
 package:
   name: gridded
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/NOAA-ORR-ERD/gridded/archive/v{{ version }}.tar.gz
-  sha256: 674eaeb51c116d6fa9ba251a374c2d8c1fc5d60f3f04d0de1c3c7f700f4dd6ee
+  sha256: 19afa6b5e85db0e0459074a8093b1f28d373f544da7450de22419d229ec49425
 
 build:
     number: 0
