@@ -15,10 +15,10 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python =2.7|>=3.7
     - pip
   run:
-    - python >=3.7
+    - python =2.7|>=3.7
     - six
     - numpy
     - scipy
