@@ -9,15 +9,16 @@ source:
   sha256: 26cfc520379692186b7e8f645ab3e851fe4ca7530691df1f68c61a102ee85991
 
 build:
+    noarch:python
     number: 1
     script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
-  build:
-    - python
+  host:
+    - python =2.7|>=3.7
     - pip
   run:
-    - python
+    - python =2.7|>=3.7
     - six
     - numpy
     - scipy

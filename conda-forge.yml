@@ -1,9 +1,6 @@
-appveyor:
-  secure: {BINSTAR_TOKEN: tumuXLL8PU75WMnRDemRy02ruEq2RpNxeK3dz0MjFssnosPm2v4EFjfNB4PTotA1}
-compiler_stack: comp7
-max_py_ver: '37'
-max_r_ver: '35'
-travis:
-  secure: {BINSTAR_TOKEN: Z/KiwoHbyhyGr4cegdA3p9/1BmIuOIuyAho59p6sHO6LSkhrsY0JIims0vk1FdmdPN2Pznj3kGdgqbu3VJ6Mu3eue0oQEjtVaX2g3Y6EZ6XqWpspswGD7MM5IfOGosjP74WrMvvKaUMgxu4TfTzgF9BaEKZCgDsWx5qRrTXhVysP03RBANC6qqGbBA9W0FDgFvB+W+vUA9bi+oFEt34uqkmBj3PrtFM5a9L+s18CDDQBdiHDyBIPFX44emzNUkp3tcZeq+zkD2CU+AQIMwrPUzljsrRU8JUcGjg/TFUBoL5M/nvR/BNiiv2MLbp7htXQK0M4s+pfNF1uOy/CV7sG7EbXJ74zwflA1ZEwJHDHfHP5rlQ11tk+zXiac5N/sJXQS1b2ZJm/5atyEo+UAw6yb/Xa16NoT/Q40KiubHqB/g+7Xl0L7DZv/BexY9QsyPJSyaz5zjzDPcAsvAdxjSXncfPGPsZ4j4fedZSGV8z71l9nHYBOXNiC+HpTWJJHLWz/thudMtvfF0F+Cv80ocDihnS00DpO45vM/WxM15pDxIPzk4Qnp/G2+EZheP5XwWH6LzHZLIQBjL3DcVMpFmsjlBqV4nOBa/w+Kh4jZoS+aH4N76D99ZNYutgogJ+umz+KPNS1vKds/bAf28RjDMqgZDs+ozg0nO9nyRF08kCQLUE=}
 provider:
   win: azure
+conda_forge_output_validation: true
+github:
+  branch_name: main
+  tooling_branch_name: main
