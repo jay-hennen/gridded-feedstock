@@ -15,10 +15,10 @@ build:
 
 requirements:
   host:
-    - python =2.7|>=3.7
+    - python >=3.7
     - pip
   run:
-    - python =2.7|>=3.7
+    - python >=3.7
     - six
     - numpy
     - scipy
@@ -33,6 +33,7 @@ test:
     - gridded
 
   commands:
+    - python -c "import gridded; assert gridded.__version__ == '{{ version }}'"
     - pytest --pyargs gridded
 
 about:
