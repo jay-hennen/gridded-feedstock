@@ -1,11 +1,11 @@
-About gridded
-=============
+About gridded-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gridded-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/NOAA-ORR-ERD/gridded
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gridded-feedstock/blob/main/LICENSE.txt)
 
 Summary: A library designed to represent grid-aligned data and provide a variety of
 processing functions, netCDF file reading/writing, and CF, UGrid, and SGrid
