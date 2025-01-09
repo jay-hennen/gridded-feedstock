@@ -11,16 +11,16 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - numpy
     - scipy
     - netcdf4
@@ -29,6 +29,7 @@ requirements:
 test:
   requires:
     - pytest
+    - python {{ python_min }}
 
   imports:
     - gridded
