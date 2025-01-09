@@ -1,5 +1,5 @@
 
-{% set version = "0.6.10" %}
+{% set version = "0.7.0" %}
 
 package:
   name: gridded
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/NOAA-ORR-ERD/gridded/archive/v{{ version }}.tar.gz
-  sha256: 5a4a779cc887722228adbd123f75c3d0f16f5c40b750b3ae251be2e75684a1be
-
+  sha256: 1c8c17e44794e7e3c0242079b0968569f5a7cf0b25c1d87319fdbd1d7cfef34b
+  
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -23,6 +23,7 @@ requirements:
     - python >={{ python_min }}
     - numpy
     - scipy
+    - python-dateutil
     - netcdf4
     - cell_tree2d
 
