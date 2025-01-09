@@ -23,6 +23,7 @@ requirements:
     - python >={{ python_min }}
     - numpy
     - scipy
+    - python-dateutil
     - netcdf4
     - cell_tree2d
 
