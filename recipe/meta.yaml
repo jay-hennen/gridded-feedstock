@@ -32,6 +32,7 @@ test:
   requires:
     - pytest
     - python {{ python_min }}
+    - pooch
 
   imports:
     - gridded
