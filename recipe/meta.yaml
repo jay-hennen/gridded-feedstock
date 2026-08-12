@@ -18,13 +18,15 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools
+    - python-build
     - hatchling
+    - hatch-vcs
   run:
     - python >={{ python_min }}
     - numpy
     - scipy
     - python-dateutil
+    - cftime
     - netcdf4
     - cell_tree2d
 
