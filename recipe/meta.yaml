@@ -8,7 +8,7 @@ package:
 source:
   url: https://github.com/NOAA-ORR-ERD/gridded/releases/download/v{{ version }}/gridded-{{ version }}.tar.gz
 #  url: https://github.com/NOAA-ORR-ERD/gridded/archive/v{{ version }}.tar.gz
-  sha256: sha256:3311785894924a6996ab3701ccea6b73a18bdd518a6cae44187df4b2d2f73b75
+  sha256: 3311785894924a6996ab3701ccea6b73a18bdd518a6cae44187df4b2d2f73b75
   
 build:
   noarch: python
