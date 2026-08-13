@@ -1,5 +1,6 @@
 
 {% set version = "0.8.0" %}
+{% set python_min = "3.12" %} #overwrite conda-forge default
 
 package:
   name: gridded
